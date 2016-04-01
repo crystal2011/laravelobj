@@ -1,16 +1,17 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+/**
+ * @name 路由
+ * @param 规则：
+ *
+ */
 
 Route::get('/','Home\HomeController@index');
 
-Route::get('home','Home\HomeController@index');
+Route::get('/home','Home\HomeController@index');
+
+
+Route::get('/moadmin','Admin\HomeController@index'); //后台
+Route::get('/moadmin/login/','Admin\LoginController@login'); //后台登录
+
+
